@@ -10,11 +10,14 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
 import java.util.Iterator;
 import java.util.List;
+import java.util.Map;
 import java.util.ServiceLoader;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.locks.Condition;
@@ -175,7 +178,34 @@ public class MyTest{
 
     @Test
     public void test9() {
-        String s = String.valueOf(-1.25);
-        System.out.println(s);
+        int[] irr = new int[]{1,2};
+        int n = 0;
+        //irr[n++]=6;  //6 2
+        irr[++n] = 6;  //6 2
+        System.out.println(irr[0]+","+irr[1]);
     }
+
+    @Test
+    public void test10(){
+        final boolean[] flag = {false};
+        Map<String,String> map = new HashMap<String,String>();
+        map.put("name","will");
+        map.forEach((key,value)->{
+            flag[0] = true;
+            map.put("name","haha");
+        });
+        if (flag[0]){
+            System.out.println("yes");
+        }
+    }
+
+    @Test
+    public void test11(){
+        //判断一个数据是否的2的N次方
+
+    }
+
+
+
+
 }
