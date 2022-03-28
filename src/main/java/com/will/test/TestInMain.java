@@ -67,12 +67,12 @@ public class TestInMain {
     //System.out.println("耗时："+(System.currentTimeMillis()-begin)+"ms");
 
     //插入排序
-    int[] arr = {22, 80, 90, 88, 83, 86, 21, 54, 94, 25};
+    //int[] arr = {22, 80, 90, 88, 83, 86, 21, 54, 94, 25};
     //int[] arr = {22, 80, 90, 88, 25, 86, 21, 54, 94, 83};
     //int[] arr = {10,1};
     //int[] arr = {10,19,8,7,6,5,4,3,2,11};
     //int[] arr = {0,1,1,7,3,2,8,10,9};
-    System.out.println("排序前:"+Arrays.toString(arr));
+    //System.out.println("排序前:"+Arrays.toString(arr));
     //System.out.println("===========================================");
     //insertSortAsc(arr);
     //xiSortAsc(arr);
@@ -81,10 +81,10 @@ public class TestInMain {
     //bubbleSortAsc(arr);
     //bubbleSortAsc2(arr);
     //quickSortAsc(arr,0,arr.length-1);
-    quickSortAscImprove(arr,0,arr.length-1);
+    //quickSortAscImprove(arr,0,arr.length-1);
     ////System.out.println("===========================================");
-    System.out.println("排序后:"+Arrays.toString(arr));
-    System.out.println("countLeft="+countLeft+"次;countRight="+countRight+"次");
+    //System.out.println("排序后:"+Arrays.toString(arr));
+    //System.out.println("countLeft="+countLeft+"次;countRight="+countRight+"次");
 
     //stackSortAsc(arr);
 
@@ -95,11 +95,11 @@ public class TestInMain {
     //  e.printStackTrace();
     //}
 
-    //try {
-    //  countRelation();
-    //} catch (IOException e) {
-    //  e.printStackTrace();
-    //}
+    try {
+      countRelation();
+    } catch (IOException e) {
+      e.printStackTrace();
+    }
 
     //try {
     //  createTestScoreFile();

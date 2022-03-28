@@ -16,10 +16,10 @@ public class NewTest {
     String fileName = "D:\\score.txt";
     InputStreamReader isr = new InputStreamReader(new FileInputStream(fileName), "UTF-8");
     BufferedReader br = new BufferedReader(isr);
-    int data[] = new int[2100002];
+    int[] data = new int[2100002];
     int i = 0;
     while ((str = br.readLine()) != null) {
-      double a = Double.valueOf(str);
+      double a = Double.parseDouble(str);
       a = a * 100;
       data[i++] = (int) a;
       // System.out.println((int) a);
@@ -30,10 +30,10 @@ public class NewTest {
     System.out.println("消耗的时间为:" + (System.currentTimeMillis() - start) + "ms");
   }
 
-  public static void countSort(int data[], int min, int max) throws Exception {
-    int counts[] = new int[max + 1];
-    for (int i = 0; i < data.length; i++) {
-      counts[data[i]]++;
+  public static void countSort(int[] data, int min, int max) throws Exception {
+    int[] counts = new int[max + 1];
+    for (int datum : data) {
+      counts[datum]++;
     }
 
     //File file = new File("D:\\score-sort.txt");
